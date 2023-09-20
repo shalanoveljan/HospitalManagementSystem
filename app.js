@@ -32,6 +32,7 @@ XesteRemove(patient){
     this.patientlist.pop(patient);
 }
 }
+debugger
 
 class Rezervation{
     constructor(doctor,patient,date){
@@ -64,8 +65,8 @@ class HospitalSystem{
         }
         
         RezervList(){
-            for (const rez of this.rezervs) {
-                console.log(rez.RezervInfo());
+            for (let rez of this.rezervs) {
+                rez.RezervInfo();
             }
         }
 }
@@ -116,3 +117,44 @@ doctor3.XesteRemove(Patient6);
 
 
 
+
+
+// let arr1 = [2,4,6]
+// let arr2 = [2,3,6]
+
+
+// function getDiff(a,b) {
+//     let diff_arr = []
+
+//     if(a.length > 0 && b.length > 0) {
+//         for(let x of a) {
+//             if(!b.includes(x)) {
+//                 diff_arr.push(x)
+//             }
+//         }
+    
+//         for(let x of b) {
+//             if(!a.includes(x)) {
+//                 diff_arr.push(x)
+//             }
+//         }
+//     }
+//     else{
+//         if(a.length === 0) {
+//             for(let item of b) {
+//                 diff_arr.push(item)
+//             }
+//         }
+//         else if(b.length){
+//             for(let item of a) {
+//                 diff_arr.push(item)
+//             }
+//         }
+//     }
+
+//     console.log(diff_arr);
+
+    
+// }
+
+// getDiff(arr1,arr2)
